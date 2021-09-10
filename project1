@@ -1,0 +1,852 @@
+title Key Adventure
+author Daniel Choe
+homepage www.puzzlescript.net
+
+========
+OBJECTS
+========
+
+Background
+#0e193f #202a4c #20324a #1f3649 #00003d 
+00004
+13210
+04000
+10111
+00032
+
+Won
+black
+
+FilledGrass
+#5BB205 #34960A  #18820A
+11010
+20101
+02010
+20201
+02022
+
+cave 
+DarkBlue White LightBlue  
+22112
+21122
+11222
+12221
+22211
+
+cavewall
+Darkgrey #222222
+01000
+11111
+00010
+00010
+11111
+
+woodBackground
+lightbrown
+
+GrassRoadhorizontal
+#c2b280
+.....
+00000
+00000
+00000
+.....
+
+GrassRoadvertical
+#c2b280
+.000.
+.000.
+.000.
+.000.
+.000.
+
+CarpetHorizontal
+red #CFB53B 
+.....
+00000
+11111
+00000
+.....
+
+CarpetKing
+red #CFB53B 
+10001
+10001
+10001
+10001
+10001
+
+Fence
+#8e4c1c #b5651d #654321
+..0..
+..0..
+20102
+..0..
+..0..
+
+Tent
+#8e4c1c #b5651d white red black
+..243
+..234
+..0..
+.010.
+01110
+
+Wall
+Black #696969
+00010
+11111
+01000
+11111
+00010
+
+Bullseyetop
+red white #5BB205 black
+20002
+01110
+01310
+01110
+20002
+
+Bullseyebot
+#5BB205 #34960A  #18820A brown
+11310
+23131
+03030
+30203
+02022
+
+quiver
+Brown #8B4513 white
+02.20
+0.1.0
+0.1.0
+00000
+00000
+
+bow
+Brown white
+10...
+1.0..
+1..0.
+1.0..
+10...
+
+Crate1
+Brown #8B4513 #D2691E
+00000
+01120
+01210
+02110
+00000
+
+Crategrass
+Brown #8B4513 #D2691E
+00000
+01120
+01210
+02110
+00000
+
+CrateFire
+#BA4D0E #91290D #F99807 red yellow
+..3..
+.343.
+34343
+43434
+.111.
+
+ShutDoor
+#d0691d #9a521d #7b441c #ad5a1d #8e4c1c Yellow
+.222.
+23140
+23140
+25140
+23140 
+
+Door
+#d0691d #9a521d #7b441c #ad5a1d #8e4c1c Yellow
+.222.
+23140
+23140
+25140
+23140
+
+WoodWall
+#4d2700 #663300 #804100
+00000
+11111
+22222
+00000
+11111
+
+Tree
+Brown #7F7 #3F3 #0B0
+.111.
+32221
+32221
+.333.
+..0..
+
+Player
+Black #C0C0C0 blue Orange
+.111.
+.000.
+.101.
+12321
+.1.1.
+
+bandit
+#a46422 #495e2b #493c2b #000000
+..0..
+.111.
+01110
+02220
+.2.2.
+
+King
+#ffd700 red #ffe0bd Gray lightgray purple
+.010.
+.333.
+32223
+.545.
+.545.
+
+Princess
+pink white red #ffe0bd #ffd700
+.424.
+.333.
+21122
+.211.
+22211
+
+Throne
+#ffd700 darkred red #ccac00
+.020.
+.020.
+.020.
+31113
+31113
+
+knights
+black #C0C0C0 #A9A9A9
+.111.
+.000.
+.101.
+22222
+.2.2.
+
+Goblin
+darkgreen
+..0..
+00000
+..0..
+.000.
+.0.0.
+
+Horris
+white black
+.111.
+.000.
+.101.
+11111
+.1.1.
+
+Horris1
+white black
+.111.
+.000.
+.101.
+11111
+.1.1.
+
+HorrisSword
+black darkgreen red gray
+.....
+.....
+...3.
+00021
+...3.
+
+
+Boulder
+#808080 #A9A9A9 #696969
+.222.
+11222
+01122
+00112
+.001.
+
+LetterS
+black
+00000
+0....
+00000
+....0
+00000
+
+LetterT
+black
+00000
+..0..
+..0..
+..0..
+..0..
+
+LetterR
+black
+00000
+0...0
+00000
+0..0.
+0...0
+
+LetterO
+black
+00000
+0...0
+0...0
+0...0
+00000
+
+LetterN
+black
+00..0
+0.0.0
+0.0.0
+0..00
+0...0
+
+LetterG
+black
+00000
+0....
+0.000
+0...0
+00000
+
+
+Key1
+#FFD700 #9932CC Red
+..00.
+..0..
+..1..
+.020.
+..0..
+
+UpperBed
+white #C0C0C0 Darkred Red
+00000
+00000
+11111
+23333
+23333
+
+LowerBed
+Darkred Red
+01111
+01111
+01111
+01111
+01111
+
+Table
+#D2B48C	#DEB887	Red
+22222
+11000
+1...0
+1...0
+1...0
+
+ChairLeft
+#DEB887
+0....
+0....
+0....
+0000.
+0..0.
+
+ChairRight
+#DEB887
+....0
+....0
+....0
+.0000
+.0..0
+
+GrassEnding
+#5BB205 #34960A  #18820A
+11010
+20101
+02010
+20201
+02022
+
+blackending
+black
+
+target
+white
+
+Ending
+transparent
+
+=======
+LEGEND
+=======
+. = Background
+: = cave
+~ = cavewall
++ = FilledGrass
+, = CarpetHorizontal
+- = FilledGrass and Player
+@ = Cave and Player
+# = Wall
+P = Player
+0 = Horris
+2 = Horris1 and FilledGrass
+Crate = Crate1 or Crategrass
+* = Crate1
+1 = Crategrass and FilledGrass
+3 = HorrisSword
+4 = HorrisSword and FilledGrass
+! = CrateFire
+K = Key1
+R = Key1 and FilledGrass
+$ = Key1 and cave
+Key = Key1
+D = Door
+y = ShutDoor
+? = GrassRoadhorizontal and FilledGrass
+" = GrassRoadvertical and FilledGrass
+B = Boulder and cave
+S = UpperBed
+X = LowerBed
+T = Table
+L = Chairleft
+Z = ending
+} = Tree and FilledGrass
+A = GrassEnding
+F = fence and FilledGrass
+G = Bullseyetop
+H = Bullseyebot
+J = knights and FilledGrass
+& = bow and FilledGrass
+/ = tent and FilledGrass
+M = knights
+Q = King
+_ = Princess
+{ = target and Player
+I = Throne
+' = CarpetKing
+% = goblin and FilledGrass
+O = bandit
+6 = Player and woodBackground
+8 = WoodWall
+9 = blackending
+7 = woodBackground
+enemy = bandit or Goblin
+letter = LetterS or LetterT or LetterR or LetterO or LetterN or LetterG (5UWNEC = STRONG)
+` = Won
+5 = LetterS and woodBackground
+U = LetterT and woodBackground
+W = LetterR and woodBackground
+N = LetterO and woodBackground
+E = LetterN and woodBackground
+C = LetterG and woodBackground
+Object = Player or cavewall
+
+
+
+=======
+SOUNDS
+=======
+
+Crate MOVE 36772507
+
+================
+COLLISIONLAYERS
+================
+
+Background
+Won
+cave
+woodBackground
+FilledGrass
+CarpetHorizontal
+CarpetKing
+GrassRoadhorizontal
+GrassRoadvertical
+target
+Key, Ending, GrassEnding, blackending
+Player, Boulder, Crate, UpperBed, LowerBed, Table, ChairLeft, ChairRight, Object, Wall, fence, Door, Bullseyetop, Bullseyebot, knights, quiver, bow, tent, Crategrass, Horris, HorrisSword, CrateFire, king, Throne, ShutDoor, Tree,Goblin,WoodWall, letter, cavewall, bandit, Princess, Horris1
+
+
+======
+RULES
+======
+
+
+[ >  Player | Crate ] -> [  >  Player | > Crate  ]
+[ < Player | Crate ] -> [ < Player | < Crate ]
+
+[ >  Player | Princess ] -> [  >  Player | > Princess  ]
+[ < Player | Princess ] -> [ < Player | < Princess ]
+
+[ >  Player | Letter ] -> [  >  Player | > Letter  ]
+[ <  Player | Letter ] -> [  <  Player | < Letter  ]
+
+late [ Crate | Crate | Crate ] -> [ | | ]
+
+
+[Player Key] [Door] -> [Player] []
+
+late [ Crate | Crate | Crate ] -> [ | |]
+[ < Player | Crategrass ] -> [ < Player | < Crategrass ]
+
+[ enemy | ... | Player ] -> [ > enemy | ... | Player ]
+[ > enemy | Wall ] -> [ < enemy | Wall ]
+[ > enemy | Player ] -> [ enemy | enemy ] message You are dead! Press R to restart!
+
+late right [LetterS | LetterT | LetterR | LetterO | LetterN | LetterG] -> [ Won LetterS | Won LetterT | Won LetterR |Won LetterO |Won LetterN|Won LetterG] message You spelled Strong!
+
+[ Boulder | ... | Player ] -> [ > Boulder | ... | Player ]
+[ > Boulder | Wall ] -> [ < Boulder | Wall ]
+[ > Boulder | Player ] -> [ Boulder | Boulder ] message You are dead! Press R to restart!
+
+[ Horris | ... | Player ] -> [ > Horris | ... | Player ]
+[ > Horris | Wall ] -> [ < Horris | Wall ]
+[ > Horris | Player ] -> [ Horris | Horris ] message You are dead! Press R to restart!
+
+random up [ Boulder | No Object ] -> [ | Boulder ]
+random left [ Boulder | No Object ] -> [ | Boulder ]
+
+
+==============
+WINCONDITIONS
+==============
+
+all ending on Player
+all GrassEnding on Player
+all blackending on player
+all target on Princess
+some Won
+
+=======
+LEVELS
+=======
+
+message It was a beautiful day in the kingdom, the First Unit of Silver Knights had just returned from their daily patrol.
+
+
+(Castle)
+`#############
+#Sp........*k#
+#X..........*#
+#............#
+#.lt........Dz
+##############
+
+`#############
+#..!.!.!.!.!.#
+#..,,,,,,,,,.#
+#..,,,,,,,,,.z
+P..!.!.!.!.!.#
+##############
+
+`fffffffffffff
+f+++++j&+++g+f
+f+++++j&+++h+f
+f++++++++++++f
+-????????""++f
+f/+/++1++""++f
+f++++++++""++f
+f/+/++1++""??a
+ffffffffffffff
+
+message “Nice parry today, you almost flung the sword in the commander's face.”
+
+
+`fffffffffff
+f++++++++++f
+-++++42++++f
+f++++++++++a
+ffffffffffff
+
+
+message Earlier that day, the King was informed that there were rebels along the borders of the kingdom. 
+
+`##############
+#......I......#
+#.!m!m...m!m!.#
+#......Q......#
+#......'......#
+P......'......y
+#......'......#
+#......'......#
+#######z#######
+
+message That night, there were movements of the rebel forces. 
+
+`######P#######
+#.!........!..#
+#..!...!!..!..#
+#.!..!!..!....#
+#...!...!.!!.!#
+#.!...!.!..!..#
+#######z#######
+
+`P#############
+#.!....!...!..#
+#.!.!....!!...#
+#.!...!.!!..!.#
+#...!!!..!.!..#
+#...!......!..z
+###############
+
+
+message THE PRINCESS HAS BEEN CAPTURED!!!
+
+
+`##############
+#......I!.....#
+#.!m!m...m!m!.#
+#...!..Q......#
+#.!....'..!...#
+#......'!.....z
+#..!...!...!..#
+p...!..'......#
+#######!#######
+
+message Save my daughter!!!
+
+message Your journey begins....
+
+`fffffffffff
+f+j++j++j++f
+-??????????a
+f+j++j++j++f
+ffffffffffff
+
+
+`fffffffffff
+f+}++++++++f
+f++}+}+++++d
+f+++++}++++f
+-+++++++}++d
+f+++}++++++f
+f++++}+++++a
+f+++++}++}+f
+ffffffffffff
+
+message Tip: One hit from a goblin will result DEATH!
+
+`fffffffffff
+f++++}++%++f
+f+}++++}+}+f
+f+++}+++}++a
+-+}+++++%}+f
+f+++}++}+++f
+ffffffffffff
+
+message After 2 days...
+
+
+`ffffffffffff
+f++888++888+f
+f++898++8y8+f
+f+++++++++++j
+f+++++++888+f
+f+++++++8y8+f
+-+++++++++++f
+fffffffffffff
+
+(5UWNEC = STRONG)
+
+message wordplay?
+
+8888888888
+8777777778
+877777E778
+875UW77C78
+8777777778
+87777N7778
+8677777778
+8888888888
+
+`ffffffffffff
+f++888++888+f
+f++8y8++898+f
+f+++++++++++j
+f+++++++888+f
+f+++++++8y8+f
+-+++++++++++f
+fffffffffffff
+
+(5UWNEC = STRONG)
+
+8888888888
+8777U77778
+87777E7778
+8577777778
+8777W77C78
+87N7777778
+8677777778
+8888888888
+
+`ffffffffffff
+f++888++888+f
+f++8y8++8y8+f
+f+++++++++++j
+f+++++++888+f
+f+++++++898+f
+-+++++++++++f
+fffffffffffff
+
+(5UWNEC = STRONG)
+
+8888888888
+87u7777778
+87777C7778
+8777777778
+87W7777E78
+8N77777778
+8677757778
+8888888888
+
+`ffffffffffff
+f++888++888+f
+f++8y8++8y8+f
+f+++++++++++a
+f+++++++888+f
+f+++++++8y8+f
+-+++++++++++f
+fffffffffffff
+
+`fffffffffff
+f++++++++++f
+-??????????a
+f++++++++++f
+ffffffffffff
+
+message Tip: Tetris
+
+`ffffffffffff
+ffff++++1++rf
+f++f+++f+1fff
+f+++1+1ff+++f
+f++ff+++++++f
+f-ff9d++++++f
+fffffffffffff
+
+`fffffffffff
+f+}++++++++f
+f++}+}+++++a
+f+++++}++++f
+-+++++++}++d
+f+++}++++++f
+f++++}+++++d
+f+++++}++}+f
+ffffffffffff
+
+message Tip: The boulders are deadly.
+
+`~~~~~~~~~~~
+@::~::::~::~
+~:::::~~:::~
+~::~:::::~:~
+~::::~:::::~
+~:~::::~:b:9
+~~~~~~~~~~~~
+
+`~~~~~~~~~~~
+@::~::::~::~
+~::::::~:::~
+~::~:::::~:~
+~::::~:::::~
+~:~:b::~:b:9
+~~~~~~~~~~~~
+
+`~~~~~~~~~~~
+@::~::::~::~
+~::::~:::::~
+~::~::~::~:~
+~::~:~::$::~
+~::::~:::::~
+~b~:b::~:bd9
+~~~~~~~~~~~~
+
+
+(cave area.... -> castle)
+
+`fffffffffff
+f+}++++++++f
+f++}+}+++++d
+f+++++}++++f
+-+++++++}++a
+f+++}++++++f
+f++++}+++++d
+f+++++}++}+f
+ffffffffffff
+
+
+`#############
+#............z
+#........o...#
+#...o........#
+P............#
+##############
+
+`#############
+p....#.......#
+#..#......#..#
+#............#
+#...o.#.o..###
+#..#...#.....z
+##############
+
+`#############
+p....#.......#
+#..#..#...#..#
+#.....o......#
+#.....#...#..#
+#..#...#.....z
+##############
+
+
+`#############
+p....#.......#
+#..#..#...#..#
+#.....o......#
+#.....#...#..#
+#..#...#....oz
+##############
+
+message Here I come Horris!
+
+
+
+`######z######
+#..!.!.'.!.!.#
+#......'.....#
+#......'.....#
+P..!.!...!.!.#
+##############
+
+
+message You can still fix things Horris!
+
+message Objective: SAVE THE PRINCESS
+
+`############
+#....._.....#
+#!.!.....!.!#
+#.....0.....#
+#.!...'...!.#
+#.....'.....#
+#..!..'..!..#
+######{######
+
+message He was awarded the greatest honor a knight could have, and became the First Unit Commander of the Silver Knights
+
+
